@@ -7,8 +7,8 @@ let temporaries = {
     value: 0
 }
 
-function getButtonText(ID){
-    let result = $('#'+ID).text();
+function getButtonText(ID) {
+    let result = $('#' + ID).text();
     return result;
 }
 
@@ -67,6 +67,10 @@ function accessButton(ID) {
 
         case "actionPercent":
             percentageFormulas();
+            break;
+
+        case "actionPlusMin":
+            switchPlusMinus();
             break;
 
         case "actionDivided":
@@ -272,4 +276,27 @@ function backSpace() {
 
 
 
+}
+
+function switchPlusMinus() {
+    let checkCurrentSegment = temporaries.previewArr;
+    let valueCurrent = temporaries.currentlyAccess;
+    let getFirstCharacter = valueCurrent.substring(0, 1);
+    if (
+        checkCurrentSegment[checkCurrentSegment.length - 1] != '+' ||
+        checkCurrentSegment[checkCurrentSegment.length - 1] != '-' ||
+        checkCurrentSegment[checkCurrentSegment.length - 1] != '*' ||
+        checkCurrentSegment[checkCurrentSegment.length - 1] != '/' &&
+        valueCurrent.length > 0
+    ) {
+        if (getFirstCharacter == '-') {
+            valueCurrent = valueCurrent.replace('-', '');
+            temporaries.currentlyAccess = valueCurrent;
+        } else {
+            temporaries.currentlyAccess = '-' + valueCurrent;
+        }
+    }
+    console.log(temporaries.previewArr);
+    storeFormulas("number");
+    // console.log(getFirstCharacter);
 }
