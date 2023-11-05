@@ -16,5 +16,5 @@ Front End : jQuery v3.5.1
 
 ## Url
 ************
-[Test / Preview](https://skylightanimation.github.io/pwa_calculator)
-[Repo build in Vue.Js](https://github.com/skylightanimation/sugaku-furienda)
+- [Test / Preview](https://skylightanimation.github.io/pwa_calculator/index.html)
+- [Repo build in Vue.Js](https://github.com/skylightanimation/sugaku-furienda)
