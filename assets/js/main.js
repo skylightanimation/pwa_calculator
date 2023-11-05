@@ -283,10 +283,10 @@ function switchPlusMinus() {
     let valueCurrent = temporaries.currentlyAccess;
     let getFirstCharacter = valueCurrent.substring(0, 1);
     if (
-        checkCurrentSegment[checkCurrentSegment.length - 1] != '+' ||
+        (checkCurrentSegment[checkCurrentSegment.length - 1] != '+' ||
         checkCurrentSegment[checkCurrentSegment.length - 1] != '-' ||
         checkCurrentSegment[checkCurrentSegment.length - 1] != '*' ||
-        checkCurrentSegment[checkCurrentSegment.length - 1] != '/' &&
+        checkCurrentSegment[checkCurrentSegment.length - 1] != '/') &&   
         valueCurrent.length > 0
     ) {
         if (getFirstCharacter == '-') {
@@ -295,8 +295,6 @@ function switchPlusMinus() {
         } else {
             temporaries.currentlyAccess = '-' + valueCurrent;
         }
+        storeFormulas("number");
     }
-    console.log(temporaries.previewArr);
-    storeFormulas("number");
-    // console.log(getFirstCharacter);
 }

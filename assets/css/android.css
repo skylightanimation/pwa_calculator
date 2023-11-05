@@ -1,5 +1,5 @@
 .container {
-    margin: 2%;
+    margin: 7.5vw;
 }
 
 .lowerContent {
@@ -39,21 +39,23 @@ button:hover {
 }
 
 #text {
+    letter-spacing: 2.25px;
     height: 9vh;
-    margin: 2% 2% 0%;
+    margin: 2% 2vw 0%;
     border-radius: 10px 10px 0 0;
     padding: 5px;
     text-align: right;
     background: #f1f2f3;
     color: #888888;
     font-size: 7vw;
-    width: 80vw;
+    width: 75vw;
 }
 
 #result {
-    width: 72vw;
+    letter-spacing: 2.25px;
+    width: 75vw;
     height: 8vw;
-    margin: 0 0 8vw;
+    margin: 0px 2vw 8vw;
     border: none;
     font-size: 4vh;
     border-radius: 0 0 10px 10px;

@@ -39,6 +39,7 @@ button:hover {
 }
 
 #text {
+    letter-spacing: 2.25px;
     height: 13vh;
     margin: 2% 2% 0%;
     border-radius: 10px 10px 0 0;
@@ -51,6 +52,7 @@ button:hover {
 }
 
 #result {
+    letter-spacing: 2.25px;
     width: 27vw;
     height: 5vw;
     margin: 0 0 0vw;
