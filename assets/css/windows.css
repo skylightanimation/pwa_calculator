@@ -66,4 +66,75 @@ body {
     background: #f1f2f3;
     height: 86vh;
     font-family: sans-serif;
+    min-width: 360px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1500px) {
+    #text {
+        height: 27vh;
+        margin: 2% 1.6vw 0%;
+    }
+
+    #result {
+        margin: 0 1.62vw 0vw;
+    }
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #result {
+        width: 28vw;
+        height: 5vw;
+        margin: 0px 1.5vw 0vw;
+        padding: 5px;
+    }
+
+
+    #text {
+        height: 30vh;
+        margin: 2% 1.5vw 0%;
+    }
+
+    button {
+        font-size: 3vh;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #result {
+        font-size: 3vw;
+    }
+
+    #text {
+        height: 38vh;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    button {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    button {
+        font-size: 2.5vw;
+        width: 5vw;
+        height: 5vw;
+    }
+
+    #result {
+        width: 24vw;
+        font-size: 2.9vw;
+    }
+
+    #text {
+        height: 22vh;
+        width: 24vw;
+    }
 }

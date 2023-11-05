@@ -1,16 +1,18 @@
 let base_url = "https://localhost:8056/pwa_caculator"
-
-styles = {
+let user_agent = '';
+let styles = {
     android: "./assets/css/android.css",
-        windows : "./assets/css/windows.css"
+    windows : "./assets/css/windows.css"
 }
 
 function loaded() {
+    let activate ='';
     if (navigator.userAgent.indexOf("Android") != -1) {
-        this.activate = this.styles.android;
+        activate = styles.android;
     } else if (navigator.userAgent.indexOf("Windows") != -1) {
-        this.activate = this.styles.windows;
+        activate = styles.windows;
     }
 
-    this.user_agent = navigator.userAgent;
+    user_agent = navigator.userAgent;
+    $("#styles").attr("href", activate);
 }
